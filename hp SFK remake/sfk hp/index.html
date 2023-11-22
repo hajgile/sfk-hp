@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンフォーキッズ英会話スクール</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+
+        header {
+            background-color: #ff4545;
+            color: #fff;
+            padding: 0.5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        
+
+        h1 a {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        h1 img {
+            width: 150px; /* 画像の幅を調整 */
+            height: auto; /* 高さは自動調整 */
+        }
+
+        nav {
+
+            position: fixed;
+            top: 0;
+            right: -300px; /* 初期位置を画面外に設定 */
+            width: 300px; /* メニューの幅を設定 */
+            height: 100vh; /* 画面の高さいっぱいに設定 */
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            transition: right 0.3s ease; /* 右からスライドするアニメーションを設定 */
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 2em 0;
+            font-weight: bold;
+            display: block;
+        }
+
+
+        #menu-icon {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        #menu-icon span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background-color: #fff;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+
+        #menu-icon.open span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        #menu-icon.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        #menu-icon.open span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+        .close-btn {
+            display: none;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+
+        main {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .box {
+            text-align:left;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1em;
+            margin: 1em;
+        }
+
+        .box1 {
+        position: relative;
+        margin: 2em 0;
+        padding: 0.5em 1em;
+        border: solid 3px #ff4545;
+        border-radius: 8px;
+        }
+        a{
+            text-decoration: none;
+            color: #0e0e0e
+        }
+
+        .box1 .box-title {
+        position: absolute;
+        display: inline-block;
+        top: -13px;
+        left: 10px;
+        padding: 0 9px;
+        line-height: 1;
+        font-size: 19px;
+        background: #FFF;
+        color: #ff4545;
+        font-weight: bold;
+        }
+        .box1 p {
+        margin: 0.4em; 
+        padding: 0.1em;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .icon {
+            position: relative;
+            font-size: 18px;  /* アイコンの大きさ */
+            color: #333;      /* アイコンの色 */
+            padding: 8px;  /* 必要に応じてパディングを追加 */
+            margin: 10px;
+            display: inline-block;
+        }      
+
+        .icon img {
+            width: 120px;
+            height: 120px;
+            font-size: 24px;  /* アイコンの大きさ */
+            color: #333;      /* アイコンの色 */
+
+        }
+
+        .classroom-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #ff4545; /* ボタンの背景色 */
+            color: #fff; /* ボタンのテキスト色 */
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+
+        .classroom-button:hover {
+        background-color: #fc0000; /* ホバー時の背景色変更 */
+        }
+
+        .rakuben{
+        max-width: 65%;  /* コンテナの幅に合わせて画像を縮小 */
+        height: auto;     /* アスペクト比を維持 */
+        display: block;   /* インライン要素からブロック要素へ変更 */
+        margin: 1em auto;
+        margin-top: 40px; /* 画像とボタンの間隔 */
+        /* 追加したスタイル */
+        }
+
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 1em;
+            position: flex;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .copy{
+            color: #acacac;
+            text-align: left;
+            line-height: 8px;
+        }
+        .copy1{
+            color: #acacac;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html"><img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\SFK logo.png" alt="サンフォーキッズ英会話スクールのロゴ"></a></h1>
+        </h1>
+        <div id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">ホーム</a>
+        <a href="curriculum.html">カリキュラム</a>
+        <a href="findclass.html">教室を見つける</a>
+        <a href="fee.html">料金案内</a>
+        <a href="event.html">イベント</a>
+        <a href="company.html">会社案内</a>
+        <div class="close-btn">メニューを閉じる</div>
+    </nav>
+
+    <main>
+        <div class="box1">
+        <div class="box-title">NEWS</div>
+        <p><a href="blog1.html">◆7月27日・29日 保津川ラフティング</a><br></p>
+        <p><a href="blog2.html">◆2022年 ハロウィンレッスンのお知らせ</a><br></p>
+        <p><a href="blog3.html">◆粟生間谷教室移転についてのお知らせ</a><br></p>
+        </div>
+
+        <div class="main">
+            
+
+        </div>
+
+        <div class="main">
+            <h3></h3>
+            <p></p>
+
+               
+           
+        </div>
+
+        <div class="icon-container">
+            <div class="icon" onclick="location.href='curriculum.html';">
+                <img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\050-study.png" alt="カリキュラム">
+                <p><b>カリキュラム</b></p>
+            </div>
+            <div class="icon" onclick="location.href='findclass.html';">
+                <img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\038-school.png" alt="教室を見つける">
+                <p><b>教室を見つける</b></p>
+            </div>
+            <div class="icon" onclick="location.href='fee.html';">
+                <img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\012-charge.png" alt="料金">
+                <p><b>料金案内</b></p>
+            </div>
+            <div class="icon" onclick="location.href='event.html';">
+                <img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\045-student.png" alt="イベント">
+                <p><b>イベント</b></p>
+            </div>
+        </div>
+        <div>
+            <a href="classrooms.html" class="classroom-button">教室体験はこちら</a>
+        </div>
+
+        <div class="rakuben-image" onclick="location.href='rakuben.html';">
+            <img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\rakuben top page img.png" alt="Your Image 2" class="rakuben">
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <p class="copy"><b>高槻本部</b></p>
+            <p class="copy">〒569-1123 大阪府高槻市芥川町2丁目24番5号</p>
+            <p></p>
+            <p class="copy"><b>営業時間</b></p>
+            <p class="copy">月曜日～金曜日 10:00～19:00</p>
+            <p></p>
+            <p class="copy"><b>電話番号</b></p>
+            <p class="copy">072-682-9280</p>
+            <p class="copy1">&copy; 2023 サンフォーキッズ英会話スクール. All Rights Reserved.</p>
+            </div>
+    </footer>
+
+    <script>
+        var menuIcon = document.getElementById('menu-icon');
+        var nav = document.querySelector('nav');
+        var closeBtn = document.querySelector('.close-btn');
+        var navLinks = document.querySelectorAll('nav a');
+
+        menuIcon.addEventListener('click', function() {
+            if (nav.style.right === '' || nav.style.right === '-300px') {
+                nav.style.right = '0';
+                closeBtn.style.display = 'block';
+            } else {
+                nav.style.right = '-300px';
+                closeBtn.style.display = 'none';
+            }
+
+            menuIcon.classList.toggle('open');
+        });
+
+        // メニューアイテムがクリックされたらメニューを閉じる
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                nav.style.right = '-300px';
+                closeBtn.style.display = 'none';
+                menuIcon.classList.remove('open');
+            });
+        });
+
+        // 閉じるボタンがクリックされたらメニューを閉じる
+        closeBtn.addEventListener('click', function() {
+            nav.style.right = '-300px';
+            closeBtn.style.display = 'none';
+            menuIcon.classList.remove('open');
+        });
+    </script>
+
+
+</body>
+</html>

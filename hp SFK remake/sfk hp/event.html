@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンフォーキッズ英会話スクール</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+
+        header {
+            background-color: #ff4545;
+            color: #fff;
+            padding: 0.5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        
+
+        h1 a {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        h1 img {
+            width: 150px; /* 画像の幅を調整 */
+            height: auto; /* 高さは自動調整 */
+        }
+
+        h2 {
+        padding: 1rem 2rem;
+        border-left: 5px solid #ff2020;
+        background: #ececec;
+        text-align: left;
+        }
+
+        h3{
+            color: #bb0000;
+        }
+        nav {
+
+            position: fixed;
+            top: 0;
+            right: -300px; /* 初期位置を画面外に設定 */
+            width: 300px; /* メニューの幅を設定 */
+            height: 100vh; /* 画面の高さいっぱいに設定 */
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            transition: right 0.3s ease; /* 右からスライドするアニメーションを設定 */
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 2em 0;
+            font-weight: bold;
+            display: block;
+        }
+
+
+        #menu-icon {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        #menu-icon span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background-color: #fff;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+
+        #menu-icon.open span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        #menu-icon.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        #menu-icon.open span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+        .close-btn {
+            display: none;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        main {
+            padding: 2em;
+            text-align: center;
+        }
+
+
+
+        .curriculum-item {
+        display: block;
+        align-items: center;
+        width: 75%;
+        padding: 20px;
+        margin: 40px;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0.5em 1em;
+        color: #0e0e0e;
+        background: #ececec;
+        border-bottom: solid 6px #b34b4b;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+}
+
+/* アイコンのスタイル */
+    .curriculum-icon {
+    
+    width: 65px; /* アイコンの幅を調整 */
+    height: 65px; /* アイコンの高さを調整 */
+    margin-right: 10px;
+    }
+
+    .curriculum-item-icon{
+        display: flex;
+    }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: flex;
+            bottom: 0;
+            width: 100%;
+        }
+        .copy{
+            color: #acacac;
+            text-align: left;
+            line-height: 8px;
+        }
+        .copy1{
+            color: #acacac;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html"><img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\SFK logo.png" alt="サンフォーキッズ英会話スクールのロゴ"></a></h1>
+        </h1>
+        <div id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <h2>イベント</h2>
+        <h4 style="text-align: left;">一年を通じて検定試験や季節の行事といった様々なイベントを開催しています！</h4>
+    </main>
+
+
+
+    <div class="curriculum-item">
+        <div class="curriculum-item-icon">
+            <img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\beach.png" alt="icon 1" class="curriculum-icon">
+            <h3>サマーキャンプ</h3>
+        </div>
+        <p>毎年7月末に2泊3日の旅に出かけます。行先は様々で、山や海といった自然と触れ合える場所や、プールなどの大型レジャー施設に行くこともあります。多くの仲間と実体験できるサマーキャンプに参加することで、集団生 活を通して自立心を養い、仲間意識を深め、社会性を高めていければと考えております。様々な国籍のスタッフで指導に当たっています。</p>
+    </div>
+
+    <div class="curriculum-item">
+        <div class="curriculum-item-icon">
+            <img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\017-grade.png" alt="icon 2" class="curriculum-icon">
+            <h3>My Progress</h3>
+        </div>
+        <p>My Progressとは、英語学習の到達度を計るサンフォーキッズ英会話スクール独自のグレードチェックです。それぞれの学習の段階において、その内容の定着度、理解 度を個別に測定し、保護者の皆様に、子どもたちの学習状況を詳細に把握することができます。</p>
+    </div>
+
+    <div class="curriculum-item">
+        <div class="curriculum-item-icon">
+            <img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\tree.png" alt="icon 3" class="curriculum-icon">
+            <h3>クリスマスレッスン</h3>
+        </div>
+        <p>12月のクリスマスの時期に各教室で子供達が楽しみにしているクリスマスにちなんだ歌やゲームを取り入れたレッスンを行なったり、不定期でホールを貸切ってパーティーを開いたりしています。ご兄弟や、お友達も参加できる子どもたち中心の楽しいレッスンとなっております。</p>
+    </div>
+
+    <div class="curriculum-item">
+        <div class="curriculum-item-icon">
+            <img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\skeleton.png" alt="icon 3" class="curriculum-icon">
+            <h3>ハロウィンレッスン</h3>
+        </div>
+        <p>10月のハロウィンの時期に各教室でハロウィンにちなんだ歌やゲームを取り入れたレッスンを行ったり、不定期でホールを貸切ってパーティーを開いたりしています。ご兄弟や、お友達も参加できます。もちろん仮装しての参加大歓迎です！</p>
+    </div>
+
+    <div class="curriculum-item">
+        <div class="curriculum-item-icon">
+            <img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\balloons.png" alt="icon 3" class="curriculum-icon">
+            <h3>フェスティバル</h3>
+        </div>
+        <p>日頃のレッスンで、子どもたちが培ってきた英語の力を大きな舞台で大勢の方に披露する『フェスティバル』(学習発表会)を不定期で開催しています。お子さまの成長と成果を舞台でご覧いただけます。</p>
+    </div>
+
+    <div class="curriculum-item">
+        <div class="curriculum-item-icon">
+            <img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\006-certificate.png" alt="icon 3" class="curriculum-icon">
+            <h3>英検</h3>
+        </div>
+        <p>英検には、子どもたち一人ひとりが現状での実力に応じて取り組むことのできる7つの級が設定されています。本校は準会場で、その受験を通じて日々の英語学習の成果を実践的な場で実感してもらい、コミュニケーションに欠かすことのできない「聞く」「読む」「話す」「書く」の4技能を実際に「使える英語」としてさらに身に付けてもらいたいと考えています。</p>
+    </div>
+
+
+
+    <nav>
+        <a href="index.html">ホーム</a>
+        <a href="curriculum.html">カリキュラム</a>
+        <a href="findclass.html">教室を見つける</a>
+        <a href="fee.html">料金案内</a>
+        <a href="event.html">イベント</a>
+        <a href="company.html">会社案内</a>
+        <div class="close-btn">メニューを閉じる</div>
+    </nav>
+
+    <footer>
+        <div>
+            <p class="copy"><b>高槻本部</b></p>
+            <p class="copy">〒569-1123 大阪府高槻市芥川町2丁目24番5号</p>
+            <p></p>
+            <p class="copy"><b>営業時間</b></p>
+            <p class="copy">月曜日～金曜日 10:00～19:00</p>
+            <p></p>
+            <p class="copy"><b>電話番号</b></p>
+            <p class="copy">072-682-9280</p>
+            <p class="copy1">&copy; 2023 サンフォーキッズ英会話スクール. All Rights Reserved.</p>
+            </div>
+    </footer>
+
+    <script>
+        var menuIcon = document.getElementById('menu-icon');
+        var nav = document.querySelector('nav');
+        var closeBtn = document.querySelector('.close-btn');
+        var navLinks = document.querySelectorAll('nav a');
+
+        menuIcon.addEventListener('click', function() {
+            if (nav.style.right === '' || nav.style.right === '-300px') {
+                nav.style.right = '0';
+                closeBtn.style.display = 'block';
+            } else {
+                nav.style.right = '-300px';
+                closeBtn.style.display = 'none';
+            }
+
+            menuIcon.classList.toggle('open');
+        });
+
+        // メニューアイテムがクリックされたらメニューを閉じる
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                nav.style.right = '-300px';
+                closeBtn.style.display = 'none';
+                menuIcon.classList.remove('open');
+            });
+        });
+
+        // 閉じるボタンがクリックされたらメニューを閉じる
+        closeBtn.addEventListener('click', function() {
+            nav.style.right = '-300px';
+            closeBtn.style.display = 'none';
+            menuIcon.classList.remove('open');
+        });
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
