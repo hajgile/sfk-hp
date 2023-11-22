@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンフォーキッズ英会話スクール</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+
+        header {
+            background-color: #ff4545;
+            color: #fff;
+            padding: 0.5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        
+
+        h1 a {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        h1 img {
+            width: 150px; /* 画像の幅を調整 */
+            height: auto; /* 高さは自動調整 */
+        }
+
+        h2 {
+        padding: 1rem 2rem;
+        border-left: 5px solid #ff4545;
+        background: #ececec;
+        text-align: left;
+        }
+
+        nav {
+
+            position: fixed;
+            top: 0;
+            right: -300px; /* 初期位置を画面外に設定 */
+            width: 300px; /* メニューの幅を設定 */
+            height: 100vh; /* 画面の高さいっぱいに設定 */
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            transition: right 0.3s ease; /* 右からスライドするアニメーションを設定 */
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 2em 0;
+            font-weight: bold;
+            display: block;
+        }
+
+
+        #menu-icon {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        #menu-icon span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background-color: #fff;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+
+        #menu-icon.open span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        #menu-icon.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        #menu-icon.open span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+        .close-btn {
+            display: none;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        main {
+            padding: 2em;
+            text-align: center;
+        }
+
+
+        table {
+            margin: 5em auto;
+            border-collapse: collapse;
+            width: 80%
+            
+        }
+        th, td {
+            padding: 40px;
+            border: 2px solid #5c5c5c;
+        }
+        th {
+            background-color: #b6b6b6;
+            color: #464646;
+        }
+        td {
+            background-color: #f3f3f3;
+            color: #0e0e0e;
+            text-align: left;
+        }
+
+
+
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: flex;
+            bottom: 0;
+            width: 100%;
+        }
+        .copy{
+            color: #acacac;
+            text-align: left;
+            line-height: 8px;
+        }
+        .copy1{
+            color: #acacac;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html"><img src="c:\Users\yuto6\OneDrive\デスクトップ\Desktop\hp SFK remake\images\SFK logo.png" alt="サンフォーキッズ英会話スクールのロゴ"></a></h1>
+        </h1>
+        <div id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <h2>会社案内</h2>
+
+    <table>
+        <tr>
+        <th>会社名</th><td>有限会社SFKインフィニティ</td>
+        </tr>
+        <th>スクール名</th><td>サンフォーキッズ英会話スクール</td>
+        </tr>
+        <th>本社所在地</th><td>〒569-1123 大阪府高槻市芥川町2丁目24番5号</td>
+        </tr>
+        <th>電話</th><td>072-682-9280</td>
+        </tr>
+        <th>FAX</th><td>072-682-928</td>
+        </tr>
+        <th>設立年月</th><td>2001年2月</td>
+        </tr>
+        <th>資本金</th><td>5,000,000円</td>
+        </tr>
+        <th>提携会社</th><td>個別指導シグマ</td>
+        </tr>
+        <th>代表取締役</th><td>大塚和行</td>
+        </tr>
+
+
+    </table>
+
+    </main>
+
+    <nav>
+        <a href="index.html">ホーム</a>
+        <a href="curriculum.html">カリキュラム</a>
+        <a href="findclass.html">教室を見つける</a>
+        <a href="fee.html">料金案内</a>
+        <a href="event.html">イベント</a>
+        <a href="company.html">会社案内</a>
+        <div class="close-btn">メニューを閉じる</div>
+    </nav>
+
+
+
+
+
+    <footer>
+        <div>
+            <p class="copy"><b>高槻本部</b></p>
+            <p class="copy">〒569-1123 大阪府高槻市芥川町2丁目24番5号</p>
+            <p></p>
+            <p class="copy"><b>営業時間</b></p>
+            <p class="copy">月曜日～金曜日 10:00～19:00</p>
+            <p></p>
+            <p class="copy"><b>電話番号</b></p>
+            <p class="copy">072-682-9280</p>
+            <p class="copy1">&copy; 2023 サンフォーキッズ英会話スクール. All Rights Reserved.</p>
+            </div>
+    </footer>
+
+    <script>
+        var menuIcon = document.getElementById('menu-icon');
+        var nav = document.querySelector('nav');
+        var closeBtn = document.querySelector('.close-btn');
+        var navLinks = document.querySelectorAll('nav a');
+
+        menuIcon.addEventListener('click', function() {
+            if (nav.style.right === '' || nav.style.right === '-300px') {
+                nav.style.right = '0';
+                closeBtn.style.display = 'block';
+            } else {
+                nav.style.right = '-300px';
+                closeBtn.style.display = 'none';
+            }
+
+            menuIcon.classList.toggle('open');
+        });
+
+        // メニューアイテムがクリックされたらメニューを閉じる
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                nav.style.right = '-300px';
+                closeBtn.style.display = 'none';
+                menuIcon.classList.remove('open');
+            });
+        });
+
+        // 閉じるボタンがクリックされたらメニューを閉じる
+        closeBtn.addEventListener('click', function() {
+            nav.style.right = '-300px';
+            closeBtn.style.display = 'none';
+            menuIcon.classList.remove('open');
+        });
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
